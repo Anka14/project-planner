@@ -1,0 +1,149 @@
+* {
+  margin :0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: blue;
+  
+}
+
+.wrapper {
+  max-width: 450px;
+  background: white;
+  margin:135px auto;
+  border-radius: 4px;
+  
+  
+}
+
+.btn-add {
+  font-size: 20px;
+  background-color: aqua;
+  margin-top: 5px;
+  margin-left: 25px;
+
+
+}
+
+.task-input {
+
+  height: 52px;
+  padding: 0 25px;
+  padding-top: 4px;
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+.task-input input {
+  width: 100%;
+  height: 100%;
+}
+
+.controls, li {
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.controls {
+border-bottom: 1px solid wheat;
+ padding: 18px 25px;
+  
+
+}
+
+.filters span.active{
+  color:blue;
+}
+.filters span {
+  margin :0 8px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.controls button {
+background-color: blue;
+color: white;
+padding: 7px 13px;
+cursor: pointer;
+
+}
+
+.task-box {
+  margin: 20px 25px;
+}
+.task-box .task {
+  list-style: none;
+  margin-bottom: 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid wheat;
+}
+
+.task-box .task:last-child{
+  margin-bottom:0;
+  border-bottom: 0;
+  padding-bottom: 0;
+
+}
+
+.task label p.checked {
+  text-decoration: line-through;
+}
+
+.task label {
+  display: flex;
+}
+
+.task label input {
+  margin-top: 6px;
+  margin-right: 12px;
+}
+
+.task .settings{
+  cursor: pointer;
+  position: relative;
+}
+
+.settings .task-menu{
+  position: absolute;
+  padding: 5px 0;
+  right: -5px;
+  bottom: -65px;
+  z-index: 2;
+  transform: scale(0);
+  background-color: white;
+  box-shadow: 0 0 6 rgba(0, 0, 0, 15);
+  transition: transform 0.2s ease;
+  border-radius: 4px;
+  transform-origin: top right;
+
+}
+
+.settings .task-menu.show{
+  transform: scale(1);
+}
+
+.task-menu li {
+  height: 25x;
+  font-size: 16px;
+  padding: 17px 15px;
+  margin-bottom: 2px;
+  justify-content: flex-start;
+
+}
+
+.task-menu li:hover {
+  background:mediumslateblue;
+}
+
+.task-menu li:last-child{
+  margin-bottom: 0;
+}
+.task-menu li i{
+  padding-right: 8px;
+
+}
