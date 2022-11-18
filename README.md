@@ -1,3 +1,5 @@
 # project-planner
-project todo app
-it is about todo app planner ( js, dom tree)
+project todo app with the status of task
+
+Used js, dom tree)
+
